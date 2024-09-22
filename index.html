@@ -1,120 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Inclusive fashion e-commerce site offering personalized clothing recommendations through AI-powered measurements.">
-    <script src="app.js"></script>
-    <title>FashionFit - Your Perfect Style</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inclusive Fashion E-Commerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>FashionFit</h1>
-            </div>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#ai-model">AI Model</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h2>Welcome to FashionFit</h2>
-            <p>Find your perfect outfit, tailored to your body, with AI-driven clothing recommendations.</p>
-            <button onclick="scrollToAIModel()">Try it Now</button>
-        </div>
-        <div class="hero-images">
-            <img src="dress1.jpg" alt="Elegant Dress">
-            <img src="jacket.jpg" alt="Stylish Jacket">
-        </div>
-    </section>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">MyFashion</div>
+    <ul class="nav-links">
+      <li><a href="#women">Women</a></li>
+      <li><a href="#men">Men</a></li>
+      <li><a href="#sale">Sale</a></li>
+    </ul>
+    <div class="cart-icon">
+      <img src="https://img.icons8.com/material-outlined/24/000000/shopping-cart.png" alt="Cart">
+    </div>
+  </nav>
 
-    <!-- Features Section -->
-    <section id="features" class="features-section">
-        <h3>Why FashionFit?</h3>
-        <div class="features-grid">
-            <div class="feature-card">
-                <h4>Inclusive Designs</h4>
-                <p>Our clothing is designed to fit all body types, ensuring comfort and style for everyone.</p>
-            </div>
-            <div class="feature-card">
-                <h4>AI-Powered Fit</h4>
-                <p>Our advanced AI recommends the perfect clothes for your measurements, making shopping easier and more fun.</p>
-            </div>
-            <div class="feature-card">
-                <h4>Fast Shipping</h4>
-                <p>Receive your perfectly tailored outfits fast with our efficient shipping service.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Big Sale 50% Off</h1>
+      <p>Grab the latest trends now</p>
+      <button>Shop Now</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://via.placeholder.com/500x300" alt="Fashion Model">
+    </div>
+  </section>
 
-    <!-- Shop Preview -->
-    <section id="shop" class="shop-preview">
-        <h3>Explore Our Collection</h3>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="product1.jpg" alt="Dress">
-                <h4>Classic Summer Dress</h4>
-                <p>$39.99</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="product2.jpg" alt="Jacket">
-                <h4>Lightweight Jacket</h4>
-                <p>$59.99</p>
-                <button>Add to Cart</button>
-            </div>
-        </div>
-    </section>
+  <!-- Feature Highlights Section -->
+  <section class="features">
+    <div class="feature">
+      <img src="https://via.placeholder.com/150x150" alt="Trending">
+      <h3>Trending: Burgundy</h3>
+    </div>
+    <div class="feature">
+      <img src="https://via.placeholder.com/150x150" alt="Animal Print">
+      <h3>Must-Have: Animal Print</h3>
+    </div>
+    <div class="feature">
+      <img src="https://via.placeholder.com/150x150" alt="Nightwear">
+      <h3>Comfy Nightwear</h3>
+    </div>
+  </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="reviews-section">
-        <h3>What Our Customers Say</h3>
-        <div class="review-card">
-            <p>"FashionFit helped me find clothes that finally fit my body perfectly!"</p>
-            <h4>- Sarah J.</h4>
-        </div>
-        <div class="review-card">
-            <p>"The AI recommendations were spot on. I love my new outfits!"</p>
-            <h4>- Mike D.</h4>
-        </div>
-    </section>
+  <!-- AI Measurement Tool -->
+  <section class="ai-tool">
+    <h2>Find Your Perfect Fit</h2>
+    <form id="measurement-form">
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" name="height" required>
 
-    <!-- AI Model Section -->
-    <section id="ai-model" class="ai-model-section">
-        <h3>Get Your AI-Powered Fit</h3>
-        <p>Enter your measurements, and our AI will recommend the best clothes for your body type.</p>
-        <form id="ai-form">
-            <label for="height">Height (cm):</label>
-            <input type="number" id="height" name="height" required>
-            
-            <label for="chest">Chest (cm):</label>
-            <input type="number" id="chest" name="chest" required>
-            
-            <label for="waist">Waist (cm):</label>
-            <input type="number" id="waist" name="waist" required>
-            
-            <label for="hips">Hips (cm):</label>
-            <input type="number" id="hips" name="hips" required>
-            
-            <button type="submit">Get Recommendations</button>
-        </form>
-        <div id="ai-recommendations"></div>
-    </section>
+      <label for="weight">Weight (kg):</label>
+      <input type="number" id="weight" name="weight" required>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 FashionFit - All rights reserved.</p>
-    </footer>
+      <label for="body-shape">Body Shape:</label>
+      <select id="body-shape" name="body-shape">
+        <option value="hourglass">Hourglass</option>
+        <option value="pear">Pear</option>
+        <option value="rectangle">Rectangle</option>
+      </select>
 
-    <script src="script.js"></script>
+      <button type="submit">Get Recommendations</button>
+    </form>
+    <div id="recommendations"></div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews">
+    <h2>What Our Customers Say</h2>
+    <div class="review">
+      <p>"The perfect fit, every time! Love the AI tool!" - Sarah</p>
+    </div>
+    <div class="review">
+      <p>"Shopping here has never been easier. Highly recommend!" - Alex</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 MyFashion. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>

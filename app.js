@@ -1,25 +1,20 @@
-// Scroll to AI model section
-function scrollToAIModel() {
-    document.getElementById('ai-model').scrollIntoView({ behavior: 'smooth' });
-}
-
-// Handle form submission for AI recommendations
-document.getElementById('ai-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    let height = document.getElementById('height').value;
-    let chest = document.getElementById('chest').value;
-    let waist = document.getElementById('waist').value;
-    let hips = document.getElementById('hips').value;
-
-    // Simulate AI recommendation logic
-    let recommendation = `
-        Based on your measurements:
-        Height: ${height} cm, Chest: ${chest} cm, Waist: ${waist} cm, Hips: ${hips} cm,
-        we recommend the following items for you:
-        - Item 1: Slim-fit Shirt
-        - Item 2: High-waist Jeans
-    `;
-
-    document.getElementById('ai-recommendations').innerText = recommendation;
-});
+document.getElementById('measurement-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const height = document.getElementById('height').value;
+    const weight = document.getElementById('weight').value;
+    const bodyShape = document.getElementById('body-shape').value;
+  
+    let recommendation = '';
+  
+    if (bodyShape === 'hourglass') {
+      recommendation = 'We recommend fitted dresses and high-waisted pants.';
+    } else if (bodyShape === 'pear') {
+      recommendation = 'Try A-line skirts and structured tops for balance.';
+    } else {
+      recommendation = 'Look for straight-cut dresses and jackets.';
+    }
+  
+    document.getElementById('recommendations').innerHTML = `<h3>Your Recommendation:</h3><p>${recommendation}</p>`;
+  });
+  
