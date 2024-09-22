@@ -1,145 +1,196 @@
 
+/* General Styles */
 body {
-    font-family: "Inter", Helvetica, sans-serif;
-    margin: 0px;
-    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#logo {
-    margin: 0px;
-    padding: 8px;
-    font-family: "Rowdies", sans-serif;
-    font-weight: 400;
-    letter-spacing: auto;
-    width: 18%;
-    color: rgb(171, 55, 200);
-    text-shadow:
-   -1px -1px 0.8px rgb(86, 15, 104),  
-    1px -1px 0.8px  rgb(86, 15, 104),
-    -1px 1px 0.8px  rgb(86, 15, 104),
-     1px 1px 0.8px  rgb(86, 15, 104);
-
-}
-
-h1 {
-    margin: 0px;
-    padding: 8px;
-}
-
-.portfolio {
+/* Header */
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
     text-align: center;
 }
-/* adding 4 values go around top, right, bottom, left
-if it's 2 its' top, bottom and left, right */
 
-ul {
-    margin: 0px;
+header .logo h1 {
+    font-size: 24px;
 }
 
-body > header {
-    color:white;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero-section {
     display: flex;
-    height: 11vh;
-    align-items: center; 
-    justify-content: space-around;
-    margin: 0px 0px 80px 0px;
-    box-shadow: 0 0 10px rgb(171, 55, 200, 20%);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #ff7f50, #ff6f69);
+    color: white;
+    width: 100%;
 }
 
-body > header > nav > ul{
-    list-style: none;
-    text-decoration: none;
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.navbutton {
-    color: rgb(171, 55, 200);
-    font-family: "Inter", sans-serif;
-    text-decoration: none;
-    box-shadow: 0 0 10px rgb(171, 55, 200, 20%);
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
     padding: 10px 20px;
-    border-radius: 20px;
-    text-transform: lowercase;
-    font-size: 0.7vw;
-    letter-spacing: 1px;
+    background-color: white;
+    color: #ff6f69;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-body > main article {
-    width: 70%;
-    margin: auto;
-}
-#main-content {
+.hero-images {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-#main-content > div {
-    width: 70%;
+.hero-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 10px;
 }
 
-form {
+/* Features Section */
+.features-section {
     text-align: center;
-
+    padding: 50px 20px;
 }
 
-#nav-ul {
+.features-grid {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-#nav-ul > li {
-    padding: 8px;
-    margin: 16px;
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
 }
 
-body > footer { 
-    background-color: rgb(171, 55, 200);
+/* Shop Preview */
+.shop-preview {
+    text-align: center;
+    padding: 50px 20px;
 }
 
-img {
-    border-radius: 50%;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 20px;
-}
-
-.card {
-  background-color: #fff;
-  padding: 30px;
-  box-shadow: 0 0 10px rgb(171, 55, 200, 20%);
-  border-radius: 10px;
-  display:grid;
-  grid-template-rows: repeat() ;
-  grid-gap: 5px;
-  text-align: center;
-}
-
-
-#footer-ul {
+.product-grid {
     display: flex;
-    list-style: none;
+    justify-content: center;
+    gap: 20px;
 }
 
-.talents {
-    width: 90%;
-    height: 84%;
-    border-radius: 3px;
-    margin: 20px 40px 20px 40px;
+.product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: center;
 }
 
-#footer-ul > div > li {
-    margin-left: 12px;
+/* Reviews Section */
+.reviews-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.review-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* AI Model Section */
+.ai-model-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.ai-model-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ai-model-section form label {
+    margin-top: 10px;
+}
+
+.ai-model-section form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.ai-model-section form button {
+    padding: 10px 20px;
+    background-color: #ff6f69;
     color: white;
-    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
 }
 
-#contact{
-    color: white;
-    background-color: rgb(171, 55, 200);
+#ai-recommendations {
+    margin-top: 20px;
+    font-size: 18px;
 }
 
-#footer-ul > div > li > a{
-    text-decoration: none;
+/* Footer */
+footer {
+    background-color: #333;
     color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
