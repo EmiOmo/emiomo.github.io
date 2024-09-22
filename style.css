@@ -1,16 +1,23 @@
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", Helvetica, sans-serif;
     margin: 0px;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 #logo {
     margin: 0px;
     padding: 8px;
-    font-family: "Fredoka One", sans-serif;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 400;
+    letter-spacing: auto;
     width: 18%;
-    text-shadow: 2px 2px 0px rgb(170, 94, 1);
+    color: rgb(171, 55, 200);
+    text-shadow:
+   -1px -1px 0.8px rgb(86, 15, 104),  
+    1px -1px 0.8px  rgb(86, 15, 104),
+    -1px 1px 0.8px  rgb(86, 15, 104),
+     1px 1px 0.8px  rgb(86, 15, 104);
 
 }
 
@@ -19,6 +26,9 @@ h1 {
     padding: 8px;
 }
 
+.portfolio {
+    text-align: center;
+}
 /* adding 4 values go around top, right, bottom, left
 if it's 2 its' top, bottom and left, right */
 
@@ -27,12 +37,13 @@ ul {
 }
 
 body > header {
-    background-color: orange;
     color:white;
     display: flex;
     height: 11vh;
     align-items: center; 
     justify-content: space-around;
+    margin: 0px 0px 80px 0px;
+    box-shadow: 0 0 10px rgb(171, 55, 200, 20%);
 }
 
 body > header > nav > ul{
@@ -41,11 +52,15 @@ body > header > nav > ul{
 }
 
 .navbutton {
-    color: white;
+    color: rgb(171, 55, 200);
+    font-family: "Inter", sans-serif;
     text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 10%;
+    box-shadow: 0 0 10px rgb(171, 55, 200, 20%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: lowercase;
+    font-size: 0.7vw;
+    letter-spacing: 1px;
 }
 
 body > main article {
@@ -75,27 +90,53 @@ form {
     margin: 16px;
 }
 
-h2 {
-    text-align: center;
-}
-
 body > footer { 
-    background-color: orange;
+    background-color: rgb(171, 55, 200);
 }
 
 img {
     border-radius: 50%;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgb(171, 55, 200, 20%);
+  border-radius: 10px;
+  display:grid;
+  grid-template-rows: repeat() ;
+  grid-gap: 5px;
+  text-align: center;
+}
+
+
 #footer-ul {
     display: flex;
     list-style: none;
+}
+
+.talents {
+    width: 90%;
+    height: 84%;
+    border-radius: 3px;
+    margin: 20px 40px 20px 40px;
 }
 
 #footer-ul > div > li {
     margin-left: 12px;
     color: white;
     text-decoration: none;
+}
+
+#contact{
+    color: white;
+    background-color: rgb(171, 55, 200);
 }
 
 #footer-ul > div > li > a{
