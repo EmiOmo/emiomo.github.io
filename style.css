@@ -1,108 +1,256 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+
+}
+
+header .banner {
+  background-color: #ff8080;
+  padding: 10px;
+  /* text-align: center; */
+  width: auto;
+
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo a {
+  font-size: 28px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Prompt", cursive; /* You can replace this with any fun Google font */
+  font-weight: 300;
+  font-style: italic;
+  text-shadow: 
+  -1px -1px 0.5px #6a2424,  
+  1px -1px 0.5px #6a2424,  
+  -1px 1px 0.5px #6a2424,  
+  1.5px 1.5px 0.5px #6a2424;
+}
+
+.search-bar input {
+  width: 500px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  box-shadow:  0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.icon i {
+  transition: color 0.3s;
+}
+
+.icon:hover i {
+  color: #f39c12; /* Changes color on hover */
+}
+
+nav ul {
+  background-color: #f9f9f9;
+  display: flex;
+  width: auto;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+
+
+section {
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 1200px;
+}
+
+.feature-cards, .styles-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card, .style-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: calc(25% - 40px); /* 25% of the width with some margin */
+}
+
+.card img, .style-card img {
+  width: 250px;
+  height: 360px; /* Set a specific height */
+  object-fit: cover; /* Ensures the image fits into the box without distortion */
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgb(106, 36, 36, 0.15);
+}
+
+#featureimg {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input, select, button {
+  padding: 15px;
+  width: 320px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #ff8080;
+  color: white;
+  cursor: pointer;
+  width: 320px;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 4px 10px rgb(106, 36, 36, 0.15);
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-container ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block; /* Ensures the image and text overlay stay together */
+  width: 100%;
+  height: 400px; /* Set the desired height for the header */
+  overflow: hidden; /* Ensures the image doesn't overflow outside the container */
+}
+
+.image-container img {
+  width: 100%; /* Image will take the full width of the screen */
+  height: 100%; /* Image will stretch to fill the height of the header */
+  object-fit: cover; /* Ensures the image covers the entire header without distortion */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 60%; /* Centers vertically */
+  left: 79%; /* Centers horizontally */
+  transform: translate(-50%, -50%); /* Offsets the top and left positioning for centering */
+  color: #ffffff; 
+  font-size: 2.2em; 
+  font-weight: 450;
+  text-transform: lowercase;
+  /* background-color: rgba(0, 0, 0, 0.5); Optional: a semi-transparent background for contrast */
+  padding: 10px 10px; /* Adds spacing around the text */
+  border-radius: 5px; /* Optional: round the corners of the text box */
+  max-width: 70%; 
+  letter-spacing: -1px;
+  font-family: "Prompt", cursive; /* You can replace this with any fun Google font */
+  font-weight: 400;
+  font-style: italic;
+  text-shadow: 
+  -1px -1px 0.5px #6a2424,  
+  1px -1px 0.5px #6a2424,  
+  -1px 1px 0.5px #6a2424,  
+  1.5px 1.5px 0.5px #6a2424;
   
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-  }
-  
-  .hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 50px;
-    background-color: #f8f8f8;
-  }
-  
-  .hero-text {
-    max-width: 50%;
-  }
-  
-  .hero-text h1 {
-    font-size: 3rem;
-    color: #e67e22;
-  }
-  
-  .hero-text button {
-    padding: 10px 20px;
-    background-color: #e67e22;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .features {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 40px;
-    background-color: #fff;
-  }
-  
-  .feature {
-    text-align: center;
-  }
-  
-  .feature h3 {
-    margin-top: 10px;
-    font-size: 1.2rem;
-  }
-  
-  .ai-tool {
-    padding: 40px;
-    background-color: #f8f8f8;
-    text-align: center;
-  }
-  
-  .ai-tool form {
-    display: inline-block;
-    text-align: left;
-  }
-  
-  .ai-tool label {
-    display: block;
-    margin: 10px 0 5px;
-  }
-  
-  .ai-tool input, .ai-tool select, .ai-tool button {
-    display: block;
-    padding: 10px;
-    width: 100%;
-    max-width: 300px;
-    margin-bottom: 20px;
-  }
-  
-  .reviews {
-    padding: 40px;
-    background-color: #fff;
-  }
-  
-  .review {
-    margin-bottom: 20px;
-  }
-  
-  footer {
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-  }
-  
+}
+
+#cta {
+  margin-top: 40px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 20px; /* Space between items */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px; /* Rounded corners for images */
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth animation */
+
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+#forusers {
+  text-align: center;
+}

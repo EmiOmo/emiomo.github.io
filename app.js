@@ -1,20 +1,12 @@
-document.getElementById('measurement-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const height = document.getElementById('height').value;
-    const weight = document.getElementById('weight').value;
-    const bodyShape = document.getElementById('body-shape').value;
+document.getElementById('fit-form').addEventListener('submit', function(e) {
+  e.preventDefault();
   
-    let recommendation = '';
+  const height = document.getElementById('height').value;
+  const weight = document.getElementById('weight').value;
+  const style = document.getElementById('style').value;
+  const photo = document.getElementById('photo').files[0];
   
-    if (bodyShape === 'hourglass') {
-      recommendation = 'We recommend fitted dresses and high-waisted pants.';
-    } else if (bodyShape === 'pear') {
-      recommendation = 'Try A-line skirts and structured tops for balance.';
-    } else {
-      recommendation = 'Look for straight-cut dresses and jackets.';
-    }
-  
-    document.getElementById('recommendations').innerHTML = `<h3>Your Recommendation:</h3><p>${recommendation}</p>`;
-  });
-  
+  alert(`Height: ${height}, Weight: ${weight}, Style: ${style}, Photo uploaded: ${photo ? 'Yes' : 'No'}`);
+
+  // Additional logic to handle fit and style recommendations based on the inputs.
+});

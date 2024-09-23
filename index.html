@@ -1,94 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inclusive Fashion E-Commerce</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StylinFit - Perfect Fit for You</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">MyFashion</div>
-    <ul class="nav-links">
-      <li><a href="#women">Women</a></li>
-      <li><a href="#men">Men</a></li>
-      <li><a href="#sale">Sale</a></li>
-    </ul>
-    <div class="cart-icon">
-      <img src="https://img.icons8.com/material-outlined/24/000000/shopping-cart.png" alt="Cart">
+    <!-- Header Section -->
+    <header>
+        <div class="banner">
+            <nav class="navbar">
+                      <div class="logo">
+                          <a href="#">stylinfit</a>
+                      </div>
+              
+                      <div class="search-bar">
+                          <input type="text" placeholder="Search...">
+                      </div>
+              
+                      <div class="nav-icons">
+                          <a href="#" class="icon"><i class="fas fa-heart"></i></a>
+                          <a href="#" class="icon"><i class="fas fa-user"></i></a>
+                          <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+                      </div>
+                  </nav>        
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#styles">Styles & Outfits</a></li>
+                    <li><a href="#fit-calculator">Fit Calculator</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="image-container">
+      <img class ="picheader" src="female-friends-walking-outdoor-field.jpg" alt="Stylish Outfit">
+      <div class="text-overlay"><p>Stop Guessing, Start Slaying</p>
+      <button id="cta">Find Your Fit</button>
+      </div>
     </div>
-  </nav>
+    <!-- Features Section -->
+    <section id="features">
+        <h2>How It Works</h2>
+        <div class="feature-cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <img id="featureimg" src="tape.jpg" alt="AI Fit Recommendations">
+                <h3>AI Fit Recommendations</h3>
+                <p>Our AI analyzes your body measurements to find your perfect fit.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img id="featureimg" src="pic.jpg" alt="Upload Your Photo">
+                <h3>Upload Your Photo</h3>
+                <p>Upload your photo to enhance style and fit suggestions for your body.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img id="featureimg" src="outfits.jpg" alt="Personalized Style Picks">
+                <h3>Personalized Style Picks</h3>
+                <p>Outfits tailored to your body type and personal style preferences.</p>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img id="featureimg" src="inclusive_.jpg" alt="Inclusive Design">
+                <h3>Inclusive Design</h3>
+                <p>Clothing recommendations that reflect all body types, making fashion fun for everyone.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Big Sale 50% Off</h1>
-      <p>Grab the latest trends now</p>
-      <button>Shop Now</button>
-    </div>
-    <div class="hero-img">
-      <img src="https://via.placeholder.com/500x300" alt="Fashion Model">
-    </div>
-  </section>
+    <!-- Styles & Outfits Section -->
+    <section id="styles">
+        <h2>Trending Outfit Pieces</h2>
+        <div class="styles-grid">
+            <!-- Outfit 1 -->
+            <div class="style-card">
+                <img src="Dress.jpg" alt="Dresses">
+                <p>Dresses</p>
+            </div>
+            <!-- Outfit 2 -->
+            <div class="style-card">
+                <img src="Co-ord.jpg" alt="Co-ord Set">
+                <p>Co-ords</p>
+            </div>
+            <!-- Outfit 3 -->
+            <div class="style-card">
+                <img src="shorts.jpg" alt="Casual Shorts">
+                <p>Shorts</p>
+            </div>
+            <!-- Outfit 4 -->
+            <div class="style-card">
+                <img src="tops.jpg" alt="Tops">
+                <p>Tops</p>
+            </div>
+            <!-- Outfit 5 -->
+            <div class="style-card">
+              <img src="jacket.jpg" alt="Jacket">
+              <p>Jackets</p>
+          </div>
+            <!-- Outfit 6 -->
+            <div class="style-card">
+              <img src="Jumpsuit.jpg" alt="Chic Jumpsuit">
+              <p>Jumpsuits</p>
+          </div>
+        </div>
+    </section>
 
-  <!-- Feature Highlights Section -->
-  <section class="features">
-    <div class="feature">
-      <img src="https://via.placeholder.com/150x150" alt="Trending">
-      <h3>Trending: Burgundy</h3>
-    </div>
-    <div class="feature">
-      <img src="https://via.placeholder.com/150x150" alt="Animal Print">
-      <h3>Must-Have: Animal Print</h3>
-    </div>
-    <div class="feature">
-      <img src="https://via.placeholder.com/150x150" alt="Nightwear">
-      <h3>Comfy Nightwear</h3>
-    </div>
-  </section>
+    <!-- Fit Calculator Section -->
+    <section id="fit-calculator">
+        <h2>Fit Calculator</h2>
+        <form id="fit-form">
+            <!-- Height -->
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required>
 
-  <!-- AI Measurement Tool -->
-  <section class="ai-tool">
-    <h2>Find Your Perfect Fit</h2>
-    <form id="measurement-form">
-      <label for="height">Height (cm):</label>
-      <input type="number" id="height" name="height" required>
+            <!-- Weight -->
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required>
 
-      <label for="weight">Weight (kg):</label>
-      <input type="number" id="weight" name="weight" required>
+            <!-- Style Preference -->
+            <label for="style">What style do you prefer?</label>
+            <select id="style" name="style" required>
+                <option value="casual">Casual</option>
+                <option value="formal">Formal</option>
+                <option value="sporty">Sporty</option>
+                <option value="chic">Chic</option>
+            </select>
 
-      <label for="body-shape">Body Shape:</label>
-      <select id="body-shape" name="body-shape">
-        <option value="hourglass">Hourglass</option>
-        <option value="pear">Pear</option>
-        <option value="rectangle">Rectangle</option>
-      </select>
+            <!-- Photo Upload -->
+            <label for="photo">Upload a Photo (optional):</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
 
-      <button type="submit">Get Recommendations</button>
-    </form>
-    <div id="recommendations"></div>
-  </section>
+            <button type="submit">Get My Fit</button>
+        </form>
+    </section>
 
-  <!-- Reviews Section -->
-  <section class="reviews">
-    <h2>What Our Customers Say</h2>
-    <div class="review">
-      <p>"The perfect fit, every time! Love the AI tool!" - Sarah</p>
-    </div>
-    <div class="review">
-      <p>"Shopping here has never been easier. Highly recommend!" - Alex</p>
-    </div>
-  </section>
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2>@stylinfit</h2>
+        <p id="forusers">pics & posts from shoppers</p>
+            <div class="gallery">
+              <div class="gallery-item">
+                  <img src="gallery_1.jpg" alt="Gallery Image 1">
+              </div>
+              <div class="gallery-item">
+                  <img src="gallery_2.jpg" alt="Gallery Image 2">
+              </div>
+              <div class="gallery-item">
+                  <img src="gallery_3.jpg" alt="Gallery Image 3">
+              </div>
+              <div class="gallery-item">
+                  <img src="gallery_4.jpg" alt="Gallery Image 4">
+              </div>
+              <div class="gallery-item">
+                  <img src="gallery_5.jpg" alt="Gallery Image 5">
+              </div>
+              <div class="gallery-item">
+                  <img src="gallery_6.jpg" alt="Gallery Image 6">
+              </div>
+            </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 MyFashion. All Rights Reserved.</p>
-  </footer>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+            <p>&copy; 2024 StylinFit. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-  <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
